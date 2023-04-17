@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="{{fill author}}">
+  <meta name="description" content="{{fill author}}'s personal page">
+  {{if hasmath}} {{insert head_katex.html }}     {{end}}
+  {{if hascode}} {{insert head_highlight.html }}   {{end}}
+  <link rel="stylesheet" href="/css/franklin.css">
+  {{isdef title}} <title>{{fill title}}</title>  {{end}}
+  <link rel="icon" href="/assets/invader.png">
+</head>
+<header>
+  <div class="parallax">
+    <div class="avatar-container">
+      <img src="assets/fabien.jpg" alt="Avatar" class="avatar"><br><br>
+      <div class="author-name" rel="author" >{{fill author}}</div>
+      <div class="author-job" rel="job"></div>{{fill job}}</div>
+    </div>
+  </div>
+</header>
+<body style="margin-left: 0px;margin-top: 0px;margin-right: 0px;">
+
+<!-- Content appended here -->
